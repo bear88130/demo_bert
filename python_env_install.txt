@@ -1,14 +1,15 @@
 conda update -n base -c defaults conda
 conda create -n demo_bert python=3.10
 y
+
 conda activate demo_bert
+y
 pip install pandas numpy transformers tqdm requests chardet jieba scikit-learn regex tensorflow
-conda install matplotlib
-y
-conda install seaborn -c conda-forge
-y
+
 conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 y
+
 pip install ipykernel
-python -m ipykernel install --user --name=finance
+python -m ipykernel install --user --name=demo_bert
 conda deactivate
+y
